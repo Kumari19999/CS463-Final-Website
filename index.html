@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wasana Pallebage | Portfolio</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+    <!-- Navbar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg bg-white navbar-light fixed-top border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#home">Wasana Pallebage</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navLinks"
+          aria-controls="navLinks"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navLinks" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#work">Previous Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home" class="section-hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <p class="text-uppercase small text-muted mb-2">Computer Science • Portland State University</p>
+            <h1 class="display-5 fw-bold mb-3">Hi, I’m Wasana Pallebage.</h1>
+            <p class="lead text-muted mb-4">
+              I build practical software in C++ and JavaScript, with interests in systems programming,
+              web development, and voice assistants.
+            </p>
+            <div class="d-flex gap-2 flex-wrap">
+              <a class="btn btn-primary btn-lg" href="#projects">View Projects</a>
+              <a class="btn btn-outline-secondary btn-lg" href="#contact">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h2 class="h5 fw-semibold mb-3">Quick Info</h2>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2"><span class="badge text-bg-light border me-2">Location</span> Portland, OR</li>
+                  <li class="mb-2"><span class="badge text-bg-light border me-2">Focus</span> C++, Web, OS</li>
+                  <li class="mb-2"><span class="badge text-bg-light border me-2">Email</span> pallebage@gmail.com</li>
+                  <li><span class="badge text-bg-light border me-2">GitHub</span> https://github.com/Kumari19999</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Optional: Add your photo later -->
+            <!-- <img class="img-fluid rounded-4 mt-3" src="yourphoto.jpg" alt="Portrait of Wasana Pallebage" /> -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2 class="h3 fw-bold">About</h2>
+            <p class="text-muted">A quick professional intro.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="card shadow-sm">
+              <div class="card-body p-4">
+                <p class="mb-3">
+                  I’m a senior Computer Science student at Portland State University. I enjoy building
+                  reliable, well-structured software and learning how systems work under the hood.
+                </p>
+                <p class="mb-0">
+                  Recently I’ve been working on projects involving data structures (BSTs/linked lists),
+                  multithreading, Linux tooling, and web applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Previous Work / Skills -->
+    <section id="work" class="section section-alt">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4">
+            <h2 class="h3 fw-bold">Previous Work</h2>
+            <p class="text-muted mb-0">Experience, courses, and skills.</p>
+          </div>
+
+          <div class="col-lg-8">
+            <!-- Accordion (counts as "beyond what we used" if you didn't use it before) -->
+            <div class="accordion shadow-sm" id="workAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    Experience
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#workAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0">
+                      <li>Fred Meyer — Customer service / teamwork / fast-paced environment</li>
+                      <li>Academic projects — C++, C, Python, JavaScript</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                    Relevant Courses
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#workAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0">
+                      <li>CS302 — Data Structures & OOP (C++)</li>
+                      <li>CS333 — Operating Systems (C)</li>
+                      <li>CS463 — Web Development (HTML/CSS/JS)</li>
+                      <li>Voice Assistants (Alexa)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                    Skills
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#workAccordion">
+                  <div class="accordion-body">
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge text-bg-primary">C++</span>
+                      <span class="badge text-bg-primary">C</span>
+                      <span class="badge text-bg-primary">JavaScript</span>
+                      <span class="badge text-bg-primary">HTML/CSS</span>
+                      <span class="badge text-bg-primary">Git/GitHub</span>
+                      <span class="badge text-bg-primary">Linux</span>
+                      <span class="badge text-bg-primary">Debugging</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Accordion -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3">
+          <div>
+            <h2 class="h3 fw-bold mb-1">Projects</h2>
+            <p class="text-muted mb-0">2–3 projects (not homework from this class).</p>
+          </div>
+          <a class="btn btn-outline-primary" href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+            View GitHub
+          </a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold">Dungeon Master Scheduler (CS302)</h3>
+                <p class="text-muted">
+                  C++ project using linked lists and recursion to manage players, quests, encounters,
+                  and save/load to a text file.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pt-0 pb-4 px-4">
+                <a class="btn btn-sm btn-primary" href="#" target="_blank" rel="noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold">Tarasaur (CS333)</h3>
+                <p class="text-muted">
+                  C program for UNIX file I/O archiving with custom headers and CRC validation.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pt-0 pb-4 px-4">
+                <a class="btn btn-sm btn-primary" href="#" target="_blank" rel="noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold">Room Reservation Alexa Skill</h3>
+                <p class="text-muted">
+                  Voice assistant project built in the Amazon Alexa Developer Console to help book rooms
+                  and confirm reservations.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pt-0 pb-4 px-4">
+                <a class="btn btn-sm btn-primary" href="#" target="_blank" rel="noreferrer">GitHub Repo / Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Optional: Carousel (if you want another Bootstrap feature) -->
+        <!-- You can add later if you want -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2 class="h3 fw-bold">Contact</h2>
+            <p class="text-muted">
+              Send a message using the form. (Includes JS validation + interactivity.)
+            </p>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="card shadow-sm">
+              <div class="card-body p-4">
+                <form id="contactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label">Name</label>
+                      <input id="name" class="form-control" type="text" placeholder="Your name" />
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <input id="email" class="form-control" type="email" placeholder="you@example.com" />
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea id="message" class="form-control" rows="5" placeholder="Write your message..."></textarea>
+                      <div class="invalid-feedback">Please write a message (10+ characters).</div>
+                    </div>
+
+                    <div class="col-12 d-flex align-items-center gap-3 flex-wrap">
+                      <button id="submitBtn" class="btn btn-primary" type="submit">Send</button>
+                      <div id="formStatus" class="small" aria-live="polite"></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <p class="text-muted small mt-3 mb-0">
+              Tip: Replace placeholders with your real email + GitHub links before final submission.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 border-top">
+      <div class="container d-flex justify-content-between flex-wrap gap-2">
+        <span class="text-muted small">© <span id="year"></span> Wasana Pallebage</span>
+        <a class="small text-decoration-none" href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (CDN) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

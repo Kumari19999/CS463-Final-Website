@@ -1,0 +1,45 @@
+/* Light theme, simple + professional */
+
+:root {
+  --section-pad: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 72px; /* space for fixed navbar */
+}
+
+.section {
+  padding: var(--section-pad) 0;
+}
+
+.section-alt {
+  background: #f8f9fa;
+}
+
+.section-hero {
+  padding: 110px 0 var(--section-pad) 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.card {
+  border-radius: 16px;
+}
+
+.btn,
+.form-control,
+.accordion,
+.accordion-item {
+  border-radius: 12px;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+}
+
+.navbar .nav-link.active {
+  color: #0d6efd;
+}
